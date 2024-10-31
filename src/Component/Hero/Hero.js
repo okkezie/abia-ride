@@ -6,9 +6,9 @@ import Google from "@/assets/svgs/google.svg";
 import Apple from "@/assets/svgs/apple.svg";
 import Message from "@/assets/svgs/message.svg";
 
-const Hero = () => {
+const Hero = ({scroller, navId}) => {
   return (
-    <section className="relative h-full md:lg-[80vh] lg:h-[100vh] w-full bg-cover bg-no-repeat bg-[url(/images/hero-bg.jpg)]">
+    <section className="relative h-full md:lg-[80vh] lg:h-[100vh] w-full bg-cover bg-no-repeat bg-[url(/images/hero-bg.jpg)]" id={navId}>
     <div className="absolute inset-0 bg-[#E9FFFA] opacity-90"></div>
   
     <div className="pt-[90px] lg:pt-[130px]">
@@ -59,6 +59,21 @@ const Hero = () => {
             className="w-[150px] h-[200px]  md:w-[400px] md:h-[450px]"
           />
         </div>
+      </div>
+      <div className='text-white flex flex-col items-center justify-center animate-bounce'>
+          <button className='rounded-full border border-white p-3' onClick={scroller}>
+              <svg 
+                  className="w-6 h-6 text-violet-500" 
+                  fill="none" 
+                  strokeLinecap="round" 
+                  strokeLinejoin="round" 
+                  strokeWidth="2" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor"
+              >
+                  <path d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+              </svg>
+          </button>
       </div>
     </div>
   </section>
