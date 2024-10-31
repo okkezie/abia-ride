@@ -9,10 +9,10 @@ const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
 
   const links = [
-    { id: 1, link: "Home" },
-    { id: 2, link: "About" },
-    { id: 3, link: "Contact" },
-    { id: 4, link: "Blog" },
+    { id: 1, link: "#home", title: "Home" },
+    { id: 2, link: "#about", title: "About" },
+    { id: 3, link: "#contact", title: "Contact" },
+    { id: 4, link: "#blog", title: "Blog" },
   ];
 
   return (
@@ -23,10 +23,10 @@ const Header = () => {
     </Link>
 
     <div className="hidden lg:flex items-center gap-10">
-      {links.map(({ id, link }) => (
-        <Link key={id} href={`/${link}`}>
+      {links.map(({ id, link, title }) => (
+        <Link key={id} href={`${link}`}>
           <p className="text-gray-800 hover:text-black cursor-pointer font-medium">
-            {link}
+            {title}
           </p>
         </Link>
       ))}
@@ -46,10 +46,10 @@ const Header = () => {
 
     {navOpen && (
       <div className="lg:hidden flex flex-col items-center bg-white gap-6 w-full h-screen absolute top-16 left-0">
-        {links.map(({ id, link }) => (
+        {links.map(({ id, link, title }) => (
           <p key={id} className="py-2">
-            <Link href={`/${link}`} passHref onClick={() => setNavOpen(false)}>
-              {link}
+            <Link href={`${link}`} passHref onClick={() => setNavOpen(false)}>
+              {title}
             </Link>
           </p>
         ))}

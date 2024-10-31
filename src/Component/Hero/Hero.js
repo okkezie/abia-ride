@@ -8,15 +8,15 @@ import Message from "@/assets/svgs/message.svg";
 
 const Hero = ({scroller, navId}) => {
   return (
-    <section className="relative h-full md:lg-[80vh] lg:h-[100vh] w-full bg-cover bg-no-repeat bg-[url(/images/hero-bg.jpg)]" id={navId}>
+    <section className="relative h-[100vh] w-full bg-cover bg-no-repeat bg-[url(/images/hero-bg.jpg)]" id={navId}>
     <div className="absolute inset-0 bg-[#E9FFFA] opacity-90"></div>
   
     <div className="pt-[90px] lg:pt-[130px]">
       <Header />
   
       <div className="flex flex-col lg:flex-row items-center justify-center gap-5 pb-[50px] relative z-20 lg:px-0">
-        <div className="w-[90%] lg:w-[35%] text-center lg:text-left lg:ml-8">
-          <h1 className="text-2xl lg:text-4xl font-bold w-full lg:w-[400px]">
+        <div className="w-[90%] lg:w-[40%] text-center lg:text-left lg:ml-8">
+          <h1 className="text-4xl lg:text-[64px] font-black tracking-wide w-full leading-snug">
             Your Smooth Ride, Just a Tap Away
           </h1>
           <p className="text-gray-600 text-[14px] py-3">
@@ -25,7 +25,7 @@ const Hero = ({scroller, navId}) => {
           </p>
   
           <div className="flex items-center justify-center lg:items-start gap-4 lg:gap-3 mt-4 lg:w-[350px]">
-          <button className="flex gap-1 items-center text-[12px] md:text-[14px] py-1 bg-[#252B42] text-white px-3 rounded-lg w-[180px]">
+          <button className="flex gap-1 items-center text-[12px] lg:text-[14px] py-1 bg-[#252B42] text-white px-3 rounded-lg w-[180px]">
               <Image
                 src={Google}
                 alt="Google"
@@ -37,7 +37,7 @@ const Hero = ({scroller, navId}) => {
               
             </button>
   
-            <button className="flex gap-1 items-center text-[12px] md:text-[14px] py-1 bg-[#252B42] text-white px-3 rounded-lg w-[180px]">
+            <button className="flex gap-1 items-center text-[12px] lg:text-[14px] py-1 bg-[#252B42] text-white px-3 rounded-lg w-[180px]">
               <Image
                 src={Apple}
                 alt="Apple"
@@ -51,12 +51,12 @@ const Hero = ({scroller, navId}) => {
           </div>
         </div>
   
-        <div className="w-full lg:w-[30%] flex justify-center lg:justify-end">
+        <div className="w-full lg:w-[35%] flex justify-center lg:justify-end">
           <Image src={Message} alt="Message" className="hidden lg:block relative left-[110px] bottom-[80px]"/>
           <Image
             src={Iphone}
             alt="Iphone"
-            className="w-[150px] h-[200px]  md:w-[400px] md:h-[450px]"
+            className="w-[180px] h-[250px] lg:w-[500px] lg:h-[550px]"
           />
         </div>
       </div>
