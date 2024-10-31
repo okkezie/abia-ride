@@ -9,7 +9,7 @@ const ReadyToRide = () => {
       <div className="flex flex-col items-center m-auto w-full py-10 px-4 lg:px-0">
         <h1 className="font-bold text-center text-[25px]">Ready to Ride?</h1>
         <p className="text-[12px] text-center text-gray-600 w-[60%] lg:w-[30%]">
-          Embrace life's vastness, venture forth, and discover the wonders
+          Embrace life&apos;s vastness, venture forth, and discover the wonders
           waiting beyond. The world beckons; seize its grand offerings now!
         </p>
       </div>
@@ -18,9 +18,9 @@ const ReadyToRide = () => {
         <Image src={Ride} alt="Ride" width={500} height={500} />
 
         <div className="flex flex-col items-center lg:flex-row flex-wrap gap-5 lg:gap-6 w-full lg:w-[30%]">
-          {ReadyRide.map((item, index) => (
+          {ReadyRide.map((item) => (
             <div
-              key={index}
+              key={item.title}
               className="flex flex-col w-[80%] lg:w-[45%] p-3 border rounded-lg"
             >
               <Image

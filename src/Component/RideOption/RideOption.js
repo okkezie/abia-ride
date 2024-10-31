@@ -10,15 +10,15 @@ const RideOption = () => {
           How Abia Ride Work
         </h1>
         <p className="text-[12px] text-center text-gray-600 w-[60%] lg:w-[30%]">
-          Embrace life's vastness, venture forth, and discover the wonders
+          Embrace life&apos;s vastness, venture forth, and discover the wonders
           waiting beyond. The world beckons; seize its grand offerings now!
         </p>
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-4">
         <div className="order-1 lg:order-1 w-[80%] lg:w-[30%]">
-          {RideWork.map((item, index) => (
-            <div key={index} className="flex flex-col lg:items-end p-3 my-3 md:my-6 border lg:border-none rounded-lg">
+          {RideWork.map((item) => (
+            <div key={item.title} className="flex flex-col lg:items-end p-3 my-3 md:my-6 border lg:border-none rounded-lg">
               <Image src={item.circle} alt="Circle" width={50} height={50} />
               <p className="font-bold text-[14px] mt-2">
                 {item.title}
@@ -38,9 +38,9 @@ const RideOption = () => {
         </div>
 
         <div className="order-2 lg:order-3 w-[80%] lg:w-[30%]">
-          {RideSecure.map((item, index) => (
+          {RideSecure.map((item) => (
             <div
-              key={index}
+              key={item.title}
               className="flex flex-col gap-2 my-3 md:my-6 border lg:border-none rounded-lg p-2"
             >
               <Image src={item.circle} alt="Circle" width={50} height={50} />
