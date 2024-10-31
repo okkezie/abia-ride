@@ -1,14 +1,14 @@
 import React from "react";
 import Header from "../Header/Header";
 import Image from "next/image";
-import Iphone from "@/public/images/iphone.png";
-import Google from "@/public/svgs/google.svg";
-import Apple from "@/public/svgs/apple.svg";
-import Message from "@/public/svgs/message.svg";
+import Iphone from "@/assets/images/iphone.png";
+import Google from "@/assets/svgs/google.svg";
+import Apple from "@/assets/svgs/apple.svg";
+import Message from "@/assets/svgs/message.svg";
 
 const Hero = () => {
   return (
-    <section className="relative h-full md:lg-[80vh] lg:h-[100vh] w-full bg-cover bg-no-repeat bg-[url('@/public/images/hero-bg.jpg')]">
+    <section className="relative h-full md:lg-[80vh] lg:h-[100vh] w-full bg-cover bg-no-repeat bg-[url(/images/hero-bg.jpg)]">
     <div className="absolute inset-0 bg-[#E9FFFA] opacity-90"></div>
   
     <div className="pt-[90px] lg:pt-[130px]">

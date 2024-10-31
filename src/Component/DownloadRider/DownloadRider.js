@@ -1,5 +1,5 @@
 import React from 'react'
-import Join from "@/public/images/join.png"
+import Join from "@/assets/images/join.png"
 import Image from 'next/image'
 
 

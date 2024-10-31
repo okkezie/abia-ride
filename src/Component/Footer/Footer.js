@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import Facebook from "@/public/svgs/facebook.svg";
-import Instagram from "@/public/svgs/instagram.svg";
-import Twitter from "@/public/svgs/twitter.svg";
+import Facebook from "@/assets/svgs/facebook.svg";
+import Instagram from "@/assets/svgs/instagram.svg";
+import Twitter from "@/assets/svgs/twitter.svg";
 import { CompanyInfo } from "@/data/companyInfoFooter";
 import { Feature } from "@/data/featureFooter";
 

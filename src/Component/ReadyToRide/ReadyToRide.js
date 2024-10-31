@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Ride from "@/public/images/ride.png";
+import Ride from "@/assets/images/ride.png";
 import { ReadyRide } from "@/data/readyToRide";
 
 const ReadyToRide = () => {

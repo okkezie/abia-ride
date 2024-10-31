@@ -2,8 +2,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/public/svgs/Logo.svg";
-import Hamburger from "@/public/svgs/hamburger.svg";
+import Logo from "@/assets/svgs/Logo.svg";
+import Hamburger from "@/assets/svgs/hamburger.svg";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
