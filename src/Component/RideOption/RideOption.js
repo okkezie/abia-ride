@@ -5,7 +5,7 @@ import { RideSecure, RideWork } from "@/data/rideOption";
 const RideOption = ({id}) => {
   return (
     <section className="py-3" id={id}>
-      <div className="flex flex-col items-center m-auto w-full py-10 px-4 lg:px-0">
+      <div className="flex flex-col items-center m-auto w-full py-10 px-4 lg:px-0 mt-[50px]">
         <h1 className="font-bold text-center text-[25px]">
           How Abia Ride Work
         </h1>
