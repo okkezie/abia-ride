@@ -1,0 +1,42 @@
+{
+  "name": "Abia Ride - Your Smooth Ride, Just a Tap Away",
+  "short_name": "Abia Ride",
+  "description": "Experience hassle-free transportation with Abia Ride. Reliable rides, anytime, anywhere.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#5F13FF",
+  "orientation": "portrait-primary",
+  "categories": ["travel", "navigation", "transport"],
+  "lang": "en",
+  "icons": [
+    {
+      "src": "/svgs/Logo.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/svgs/Logo.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book a Ride",
+      "short_name": "Book Ride",
+      "description": "Quickly book a ride",
+      "url": "/book",
+      "icons": [{ "src": "/svgs/car.svg", "sizes": "96x96" }]
+    },
+    {
+      "name": "My Rides",
+      "short_name": "My Rides",
+      "description": "View your ride history",
+      "url": "/history",
+      "icons": [{ "src": "/svgs/ride.svg", "sizes": "96x96" }]
+    }
+  ]
+}
